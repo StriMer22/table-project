@@ -1,0 +1,63 @@
+app-table {
+  .table-card {
+    margin: 20px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  table.mat-table {
+    width: 100%;
+  }
+
+  mat-paginator {
+    margin-bottom: 5px;
+  }
+
+  .mat-cell,
+  .mat-header-cell {
+    white-space: nowrap;
+  }
+  .mat-elevation-z8 {
+    flex: 1;
+  }
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .viewport {
+    min-height: 600px;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .table-card {
+      margin: 10px;
+      overflow-x: scroll;
+    }
+    .viewport {
+      min-height: 500px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .table-card {
+      margin: 5px;
+    }
+    .viewport {
+      min-height: 440px;
+    }
+    .mat-header-row,
+    .mat-row {
+      display: block;
+    }
+    .mat-cell,
+    .mat-header-cell {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
